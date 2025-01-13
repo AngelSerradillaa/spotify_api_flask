@@ -1,0 +1,10 @@
+{
+    "usuario1": {
+        "password": "$2b$12$aK9Pvdx/ZTk6x/VmHUuVJuOPoq.D/lpArlFLwJDC8Ukxd3MxKIUpa",
+        "full_name": "Nuevo Nombre"
+    },
+    "usuario2": {
+        "password": "$2b$12$TXTR4uryVFRgG7RQfJFH..nXydjJa.kbWgb9EzH3c3L7qVrN7ngr.",
+        "full_name": "Angel Serradilla"
+    }
+}

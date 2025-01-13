@@ -43,11 +43,15 @@ def get_token(code: str):
     # Manejo de errores para evitar fallos si algo no está en el JSON
     if result.status_code == 200:
         json_result = result.json()
-        access_token = json_result["access_token"]
-        refresh_token = json_result["refresh_token"]
-        expires_in = time.time() + json_result["expires_in", 0]
+        access_token = json_result.get("access_token")
+        refresh_token = json_result.get("refresh_token")
+        expires_in = time.time() + json_result.get("expires_in", 0)
 
-        return access_token
+        return {
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "expires_in": expires_in,
+        }
     else:
         print("Error al obtener el token:", result.status_code, result.content)
         return None
