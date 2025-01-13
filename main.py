@@ -27,62 +27,21 @@ if __name__ == "__main__":
     webbrowser.open("https://127.0.0.1:8000/login")
     app.run(port=8000, debug=True)'''
 
-import uuid
-from fastapi import FastAPI, HTTPException, Request 
-from fastapi.responses import HTMLResponse, RedirectResponse
-import requests
+from fastapi import FastAPI, HTTPException
 import webbrowser
-from spotify_connect import get_auth_url, get_token
-from users_manage import User, save_users, load_users
+from users_manage import User, save_users, load_users, save_logged_user
+from spotify_endpoints import router as spotify_router
 from passlib.context import CryptContext
 import uvicorn
+from cachetools import TTLCache
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 app = FastAPI()
 
-#Endpoints con spotify api
-@app.get("/login")
-def login():
-    auth_url = get_auth_url()
-    return RedirectResponse(url=auth_url)
+app.include_router(spotify_router, prefix="", tags=["Spotify"])
 
-@app.get("/callback")
-async def api_callback(request: Request):
-    code = request.query_params.get("code")
-    error = request.query_params.get("error")
-
-    if error:
-        raise HTTPException(status_code=400, detail=f"Spotify ha retornado el siguiente error: {error}")
-    if not code:
-       raise HTTPException(status_code=400, detail="No se ha retornado código de autorización")
-    
-    token = get_token(code)
-
-    if not token:
-        raise HTTPException(status_code=500, detail="No se pudo obtener el token de Spotify")
-
-    access_token = token["access_token"]
-    refresh_token = token["refresh_token"]
-    expires_in = token["expires_in"]
-
-    print(f"Access Token: {access_token}")
-    print(f"Refresh Token: {refresh_token}")
-    print(f"Expires In: {expires_in}")
-
-    return HTMLResponse(content=f'''
-        <html>
-            <body>
-                <h1>El token ha sido almacenado correctamente.</h1>
-                <p>Access Token: {access_token}</p>
-                <p>Refresh Token: {refresh_token}</p>
-                <p>Expires In: {expires_in}</p>
-                <p>Puedes ir a la documentación para probar los endpoints <a href="/docs">aquí</a>.</p>
-            </body>
-        </html>
-    ''')
-
-
+user_cache = TTLCache(maxsize=100, ttl=3600)
 
 #Crear usuario
 @app.post("/users/")
@@ -133,12 +92,12 @@ def login(user: User):
     stored_user = users[user.username]
     if not pwd_context.verify(user.password, stored_user["password"]):
         raise HTTPException(status_code=401, detail="Contraseña incorrecta")
-
-    
+    save_logged_user(user.username)
+    webbrowser.open("http://127.0.0.1:8000/login")
     return {"message": f"Usuario {user.username} autenticado exitosamente"}
 
 
 
 if __name__ == "__main__":
-    webbrowser.open("http://127.0.0.1:8000/login")
+    
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
