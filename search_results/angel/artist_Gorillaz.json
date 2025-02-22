@@ -1,0 +1,360 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?offset=0&limit=10&query=Gorillaz&type=artist",
+        "limit": 10,
+        "next": "https://api.spotify.com/v1/search?offset=10&limit=10&query=Gorillaz&type=artist",
+        "offset": 0,
+        "previous": null,
+        "total": 894,
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 12847962
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+                "id": "3AA28KZvwAUcZuOKwyblJQ",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebce5f4c2722732fbd7e814dad",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174ce5f4c2722732fbd7e814dad",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178ce5f4c2722732fbd7e814dad",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Gorillaz",
+                "popularity": 80,
+                "type": "artist",
+                "uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2hazSY4Ef3aB9ATXW7F5w3"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 651101
+                },
+                "genres": [
+                    "indie"
+                ],
+                "href": "https://api.spotify.com/v1/artists/2hazSY4Ef3aB9ATXW7F5w3",
+                "id": "2hazSY4Ef3aB9ATXW7F5w3",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb6f45d6973fc2dbf17612b8cc",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab676161000051746f45d6973fc2dbf17612b8cc",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f1786f45d6973fc2dbf17612b8cc",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "IZAL",
+                "popularity": 59,
+                "type": "artist",
+                "uri": "spotify:artist:2hazSY4Ef3aB9ATXW7F5w3"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2X11x8C63wCzAf1WwsIuLg"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 255929
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/2X11x8C63wCzAf1WwsIuLg",
+                "id": "2X11x8C63wCzAf1WwsIuLg",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb277f8bdb28960238dae52128",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174277f8bdb28960238dae52128",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178277f8bdb28960238dae52128",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Kaze",
+                "popularity": 57,
+                "type": "artist",
+                "uri": "spotify:artist:2X11x8C63wCzAf1WwsIuLg"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/56n1NeXsTOOxjX3Z4lVMTJ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 713455
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/56n1NeXsTOOxjX3Z4lVMTJ",
+                "id": "56n1NeXsTOOxjX3Z4lVMTJ",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb3ab473e158510f75261428bf",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab676161000051743ab473e158510f75261428bf",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f1783ab473e158510f75261428bf",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "SFDK",
+                "popularity": 60,
+                "type": "artist",
+                "uri": "spotify:artist:56n1NeXsTOOxjX3Z4lVMTJ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Y365ZqTf6fJ4ZcRnLKPGt"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 892742
+                },
+                "genres": [
+                    "southern hip hop",
+                    "crunk"
+                ],
+                "href": "https://api.spotify.com/v1/artists/3Y365ZqTf6fJ4ZcRnLKPGt",
+                "id": "3Y365ZqTf6fJ4ZcRnLKPGt",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb64baf22b6487147489ea30b6",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000517464baf22b6487147489ea30b6",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f17864baf22b6487147489ea30b6",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Gorilla Zoe",
+                "popularity": 50,
+                "type": "artist",
+                "uri": "spotify:artist:3Y365ZqTf6fJ4ZcRnLKPGt"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5EBH204cwRkvAWknwTAjCQ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 661389
+                },
+                "genres": [
+                    "rock urbano"
+                ],
+                "href": "https://api.spotify.com/v1/artists/5EBH204cwRkvAWknwTAjCQ",
+                "id": "5EBH204cwRkvAWknwTAjCQ",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb1d240f8776c5c67c12de5cfe",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab676161000051741d240f8776c5c67c12de5cfe",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f1781d240f8776c5c67c12de5cfe",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Marea",
+                "popularity": 59,
+                "type": "artist",
+                "uri": "spotify:artist:5EBH204cwRkvAWknwTAjCQ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4dJX4iJ0qbB4gjkeenbK2N"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 120930
+                },
+                "genres": [
+                    "hardcore punk",
+                    "hardcore",
+                    "punk",
+                    "skate punk",
+                    "melodic hardcore"
+                ],
+                "href": "https://api.spotify.com/v1/artists/4dJX4iJ0qbB4gjkeenbK2N",
+                "id": "4dJX4iJ0qbB4gjkeenbK2N",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eba75b1c2c590e49893e3c7d7e",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174a75b1c2c590e49893e3c7d7e",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178a75b1c2c590e49893e3c7d7e",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Gorilla Biscuits",
+                "popularity": 36,
+                "type": "artist",
+                "uri": "spotify:artist:4dJX4iJ0qbB4gjkeenbK2N"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2biH2I1TvZlIIIc5W14oIJ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 362891
+                },
+                "genres": [
+                    "reggaeton"
+                ],
+                "href": "https://api.spotify.com/v1/artists/2biH2I1TvZlIIIc5W14oIJ",
+                "id": "2biH2I1TvZlIIIc5W14oIJ",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb624c350cb0754298d633a627",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174624c350cb0754298d633a627",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178624c350cb0754298d633a627",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Franco \"El Gorilla\"",
+                "popularity": 60,
+                "type": "artist",
+                "uri": "spotify:artist:2biH2I1TvZlIIIc5W14oIJ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5Hsv8dUHHOdnn72q4XIVz7"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 780349
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5Hsv8dUHHOdnn72q4XIVz7",
+                "id": "5Hsv8dUHHOdnn72q4XIVz7",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5ebdc1e8822bc0aa6ebdaa977d8",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174dc1e8822bc0aa6ebdaa977d8",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178dc1e8822bc0aa6ebdaa977d8",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Leiva",
+                "popularity": 64,
+                "type": "artist",
+                "uri": "spotify:artist:5Hsv8dUHHOdnn72q4XIVz7"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3uItN5CehblL9at5ZvETez"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2163
+                },
+                "genres": [
+                    "boom bap",
+                    "brazilian hip hop"
+                ],
+                "href": "https://api.spotify.com/v1/artists/3uItN5CehblL9at5ZvETez",
+                "id": "3uItN5CehblL9at5ZvETez",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb0281f7c518a6e2406be714c1",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab676161000051740281f7c518a6e2406be714c1",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f1780281f7c518a6e2406be714c1",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Gorilla Concept Music",
+                "popularity": 41,
+                "type": "artist",
+                "uri": "spotify:artist:3uItN5CehblL9at5ZvETez"
+            }
+        ]
+    }
+}
